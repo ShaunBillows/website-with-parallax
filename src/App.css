@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body {
+  background-color: rgb(20, 20, 20);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: limegreen 2px solid; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Modal */
+
+/* .overlay {
+  height: 100vw;
+  width: 100vw;
+  position: absolute;
+  background-color: red;
+  z-index: 4;
+  outline: red 2px solid;
+} */
+
+.modalContainer {
+  max-width: 600px;
+  width: 100%;
+  position: fixed;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.75);
+  background-color: rgb(20, 20, 20);
+  box-shadow: 3px 3px 15px rgba(75, 75, 75, 0.75);
+  border-radius: 8px;
+  z-index: 3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  width: 250px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.modalRight {
+  width: 100%;
+}
+
+.closeBtn {
+  position: fixed;
+  font-size: x-large;
+  top: 8px;
+  right: 10px;
+  color: rgba(75, 75, 75, 0.75);
+  cursor: pointer;
+}
+
+.content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+}
+
+.btnContainer {
+  display: flex;
+  padding: 1rem 1rem;
+}
+.btnContainer button {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 16px 0;
+  border: 1px solid #411b57;
+}
+
+.btnPrimary {
+  background-color: #411b57;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btnOutline {
+  background-color: white;
+  color: #411b57;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bold {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 500px) {
+  .modalContainer {
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+  }
+
+  .heading {
+    margin: 1rem;
   }
 }
