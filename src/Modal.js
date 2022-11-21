@@ -1,7 +1,19 @@
-import nft from "./assets/sat.png";
+import { Projects } from "./Projects";
+// import "./cards.css"
 
-const Modal = ({ open, onClose }) => {
+const Modal = ({ open, onClose, modalContent }) => {
   if (!open) return null;
+
+  const renderModalContent = () => {
+    switch(modalContent) {
+      case "Projects":
+        return <Projects/>
+        break;
+      default:
+        return
+    }
+  }
+
   return (
     // <div onClick={onClose} className="overlay">
     <div
@@ -10,13 +22,13 @@ const Modal = ({ open, onClose }) => {
       }}
       className="modalContainer"
     >
-      <img src={nft} alt="/" />
+      {/* <img src={nft} alt="/" /> */}
       <div className="modalRight">
         <p className="closeBtn" onClick={onClose}>
           X
         </p>
         <div className="content">
-          <p>Do you want a</p>
+          {/* <p>Do you want a</p>
           <h1>$20 CREDIT</h1>
           <p>for your first tade?</p>
         </div>
@@ -27,10 +39,11 @@ const Modal = ({ open, onClose }) => {
           <button className="btnOutline">
             <span className="bold">NO</span>, thanks
           </button>
+        </div> */}
+          {modalContent && modalContent()}
         </div>
       </div>
     </div>
-    // </div>
   );
 };
 
