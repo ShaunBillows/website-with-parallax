@@ -15,7 +15,8 @@ const Modal = ({ open, onClose, modalContent }) => {
   }
 
   return (
-    // <div onClick={onClose} className="overlay">
+    <>
+    {/* <div onClick={onClose} className="overlay"></div> */}
     <div
       onClick={(e) => {
         e.stopPropagation();
@@ -40,10 +41,11 @@ const Modal = ({ open, onClose, modalContent }) => {
             <span className="bold">NO</span>, thanks
           </button>
         </div> */}
-          {modalContent && modalContent()}
+          {modalContent && renderModalContent()}
         </div>
       </div>
     </div>
+    </>
   );
 };
 

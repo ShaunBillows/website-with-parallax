@@ -6,25 +6,23 @@
   body {
     align-items: center;
     background-color: var(--bg-color);
-    display: flex;
-    height: 100vh;
+    /* display: flex; */
+    /* height: 100vh; */
     justify-content: center;
-    margin: 0px;
-    overflow: hidden;
-    padding: 0px;
+    /* overflow: hidden; */
   }
   
   #cards {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
     gap: 8px;  
     max-width: 916px;
-    width: calc(100% - 20px);
+    width: calc(100% - 20px); */
   }
   
-  #cards:hover > .card::after {
+  /* #cards:hover > .card::after {
     opacity: 1;
-  }
+  } */
   
   .card {
     /* background-color: rgba(255, 255, 255, 0.1);
@@ -37,9 +35,9 @@
     width: 300px;   */
   }
   
-  .card:hover::before {
+  /* .card:hover::before {
     opacity: 1;
-  }
+  } */
   
   .card::before,
   .card::after {
@@ -73,7 +71,7 @@
   }
   
   .card > .card-content {
-    background-color: var(--card-color);
+    /* background-color: var(--card-color);
     border-radius: inherit;
     display: flex;
     flex-direction: column;
@@ -81,7 +79,7 @@
     inset: 1px;
     padding: 10px;
     position: absolute;
-    z-index: 2;
+    z-index: 2; */
   }
   
   /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
@@ -98,11 +96,11 @@
   }
   
   .card-image {
-    align-items: center;
+    /* align-items: center;
     display: flex;
     height: 140px;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden; */
   }
   
   .card-image > i {
@@ -119,9 +117,9 @@
   }
   
   .card-info {
-    align-items: flex-start;
+    /* align-items: flex-start;
     display: flex;
-    gap: 10px;
+    gap: 10px; */
   }
   
   .card-info > i {  

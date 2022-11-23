@@ -1,6 +1,4 @@
-body {
-  background-color: rgb(20, 20, 20);
-}
+
 
 * {
   margin: 0;
@@ -11,14 +9,14 @@ body {
 
 /* Modal */
 
-/* .overlay {
+.overlay {
   height: 100vw;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   background-color: red;
-  z-index: 4;
-  outline: red 2px solid;
-} */
+  z-index: 00;
+  outline: red 20px solid;
+}
 
 .modalContainer {
   max-width: 1000px;
@@ -35,6 +33,8 @@ body {
   border-radius: 8px;
   z-index: 3;
   padding-bottom: 4rem;
+
+  background-color: rgb(20, 20, 20);;
 }
 
 img {
