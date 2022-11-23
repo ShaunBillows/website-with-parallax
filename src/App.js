@@ -1,10 +1,10 @@
-import "./app.css";
 import { useState } from "react";
 import Modal from "./Modal";
 import { Menu } from "./Menu";
 import { Projects } from "./Projects";
 import { About } from "./About";
 import {Contact} from "./Contact";
+import "./app.css";
 
 export const App = () => {
 
