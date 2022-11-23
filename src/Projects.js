@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import "./cards.css"
+import "./Cards.css"
 import { useState, useEffect } from "react";
 import { ProjectCard } from "./ProjectCard";
 
